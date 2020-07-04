@@ -1,16 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Lindsay Turners personal blog`,
+    description: `A place where I can come and ponder, share and interact with all the humans of the world`,
+    author: `Lindsay Turner`,
   },
   plugins: [
+    "gatsby-plugin-top-layout",
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "Blog",
+        fieldName: "LB",
+        url:
+          "https://api-us-east-1.graphcms.com/v2/ckbsz1wnj009l01xmeefw43ly/master",
       },
     },
     `gatsby-transformer-sharp`,
@@ -29,6 +40,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

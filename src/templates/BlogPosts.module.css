@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-bottom: 2rem;
+  left: 50%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(auto-fit);
+  grid-template-areas:
+    "t t t"
+    ". m r";
+}
+.blogHero {
+  grid-area: t;
+  height: 300px;
+  background-color: whitesmoke;
+  text-align: center;
+  color: #2b4829;
+}
+.titleAuthor > h1 {
+  font-family: "Raleway", sans-serif;
+}
+.titleAuthor > h3 {
+  font-family: "Raleway", sans-serif;
+}
+.titleAuthor > h4 {
+  font-family: "Raleway", sans-serif;
+}
+.titleAuthor {
+  text-align: center;
+}
+.center {
+  grid-area: m;
+}
+.featuredImage {
+  border-radius: 6px;
+}
+.featuredImage img {
+  height: 100%;
+  border-radius: 6px;
+}
+.paginationWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "l r";
+  margin-bottom: 2rem;
+}
+.prevBtn {
+  grid-area: l;
+  text-align: center;
+  width: 75%;
+}
+.nextBtn {
+  grid-area: r;
+  text-align: center;
+  width: 75%;
+}
+.body {
+  grid-area: m;
+}

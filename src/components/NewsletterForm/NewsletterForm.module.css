@@ -1,0 +1,35 @@
+.formWrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    ". fname lname email ."
+    ". . btn . . ";
+}
+.form {
+  text-align: center;
+  color: #2b4829;
+  background-color: #a1b89c;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 6px;
+}
+.title {
+  /* grid-area: title; */
+  color: #2b4829;
+}
+.nameWrapper {
+  margin-bottom: 1rem;
+  grid-area: fname;
+}
+.btn {
+  grid-area: btn;
+}
+.lname {
+  grid-area: lname;
+  margin-left: 1rem;
+}
+.email {
+  grid-area: email;
+  margin-left: 1rem;
+}

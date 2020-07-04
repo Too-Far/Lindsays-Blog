@@ -1,0 +1,30 @@
+{/* <div className={styles.disqusWrapper}>
+            <DiscussionEmbed {...disqusConfig} />
+          </div>
+          <div className={styles.paginationWrapper}>
+            <div className={styles.prevBtn}>
+              {typeof property.prev.slug != "undefined" && (
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  href={property.prev.slug}
+                >
+                  {property.prev.title}
+                </Button>
+              )}
+            </div>
+            <div className={styles.nextBtn}>
+              {typeof property.next.slug != "undefined" && (
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  href={property.next.slug}
+                >
+                  {property.next.title}
+                </Button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout> */}

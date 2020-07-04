@@ -1,0 +1,15 @@
+import React from "react"
+import styles from "./blog.module.css"
+import Layout from "../components/Layout/layout"
+import SEO from "../components/SEO/seo"
+import BlogIndex from "../components/BlogIndex/BlogIndex"
+
+const BlogPage = () => {
+  return (
+    <Layout>
+      <SEO title="/blog" />
+      <BlogIndex />
+    </Layout>
+  )
+}
+export default BlogPage

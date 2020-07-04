@@ -1,0 +1,22 @@
+.QuoteBlockContainer {
+  text-align: center;
+}
+q {
+  font-size: 2.5rem;
+  quotes: "“" "”" "‘" "’";
+  color: #a1b89c;
+  font-style: italic;
+  font-family: raleway;
+}
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+h3 {
+  color: #2b4829;
+  margin-top: 2rem;
+  margin-left: 70%;
+  margin-bottom: 3rem;
+}

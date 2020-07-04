@@ -1,15 +1,12 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+/*
+ * layout component that wraps each page and contains header (with nav bars) and footer, as well as any general layout
  */
 
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import Header from "../Header/Header"
+import { makeStyles } from "@material-ui/core"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,7 +22,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
@@ -33,11 +29,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Header />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer style={{ textAlign: "center", marginTop: "3rem" }}>
+          © {new Date().getFullYear()}; Lindsay Turner
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>

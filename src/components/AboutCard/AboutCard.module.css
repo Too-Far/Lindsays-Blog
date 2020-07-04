@@ -1,0 +1,49 @@
+.AboutCardContainer {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+    "photo bio" ". ."
+    "links links";
+  color: #2b4829;
+}
+.authImage {
+  grid-area: photo;
+  height: fit-content;
+  border-radius: 6px;
+}
+.authImage img {
+  border-radius: 6px;
+}
+.authBio {
+  grid-area: bio;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.authBio p {
+  margin-left: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+.authBio > h1 {
+  font-family: "Raleway", sans-serif;
+}
+.links {
+  grid-area: links;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #2b4829;
+}
+.links h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  color: #2b4829;
+}
+.links ul {
+  list-style-type: none;
+  background-color: #a1b89c;
+  color: white;
+}
+
+.links a {
+  color: white;
+}

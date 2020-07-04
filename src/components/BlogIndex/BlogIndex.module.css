@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "left middle right";
+  justify-content: center;
+  align-content: center;
+  margin-top: 0em;
+  padding-top: 0em;
+}
+.wrapper {
+  grid-area: middle;
+  position: relative;
+}

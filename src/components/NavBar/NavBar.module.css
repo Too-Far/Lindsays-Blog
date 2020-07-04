@@ -1,0 +1,19 @@
+.NavBarContainer {
+  position: fixed;
+  display: flex;
+  padding-top: 0;
+}
+.innerWrapper {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  margin-left: auto;
+}
+.solid {
+  display: hidden;
+}
+.logo {
+  margin-left: 4rem;
+  margin-top: 0;
+  width: 30%;
+}

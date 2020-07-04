@@ -1,0 +1,22 @@
+.SolidNavBarContainer {
+  position: fixed;
+  display: flex;
+  padding-top: 0;
+  top: 0;
+  width: 85%;
+  z-index: 11;
+}
+.btns {
+  margin-left: auto;
+}
+.innerWrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: 3rem;
+  justify-content: center;
+}
+.logo {
+  margin-left: 4rem;
+  width: 20%;
+  margin-bottom: 0;
+}
