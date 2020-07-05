@@ -3,7 +3,7 @@ import styles from "./connect.module.css"
 import Layout from "../components/Layout/layout"
 import ConnectDisplay from "../components/ConnectDisplay/ConnectDisplay"
 import NewsletterForm from "../components/NewsletterForm/NewsletterForm"
-import SEO from "../components/SEO/seo"
+import SEO from "../components/SEO/SEO"
 
 const ConnectPage = () => {
   return (
