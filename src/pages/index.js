@@ -7,7 +7,7 @@ import QuoteBlock from "../components/QuoteBlock/QuoteBlock"
 import NewsLetterForm from "../components/NewsletterForm/NewsletterForm"
 
 import styles from "./index.module.css"
-import SEO from "../components/Seo/seo"
+import SEO from "../components/SEO/seo"
 
 const useStyles = makeStyles({
   root: {
