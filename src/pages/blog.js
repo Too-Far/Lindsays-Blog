@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./blog.module.css"
-import Layout from "../components/Layout/layout"
+import Layout from "../components/Layout/Layout"
 import SEO from "../components/SEO/SEO"
 import BlogIndex from "../components/BlogIndex/BlogIndex"
 

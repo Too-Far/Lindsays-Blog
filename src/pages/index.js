@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Button, makeStyles, ThemeProvider } from "@material-ui/core"
 
-import Layout from "../components/Layout/layout"
+import Layout from "../components/Layout/Layout"
 import QuoteBlock from "../components/QuoteBlock/QuoteBlock"
 import NewsLetterForm from "../components/NewsletterForm/NewsletterForm"
 
